@@ -1,0 +1,40 @@
+@import url(./reset.css);
+@import url(./header.css);
+@import url(./home.css);
+@import url(../css/about.css);
+@import url(../css/education.css);
+@import url(../css/project.css);
+@import url(../css/footer.css);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: logofont;
+    src: url(../fonts/Helios\ Regular.otf)
+}
+
+@font-face {
+    font-family: hellofont;
+    src: url(../fonts/Stickler-Pro.ttf);
+}
+
+@font-face {
+    font-family: headerfont;
+    src: url(../fonts/CornerOne/CornerOne-Bold-Regular.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}

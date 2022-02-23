@@ -1,0 +1,102 @@
+.navation {
+    width: 100%;
+    height: 64px;
+    background-color: #191919;
+    animation: nav-load 0.5s ease-in;
+    z-index: 1000;
+    position: fixed;
+}
+
+@keyframes nav-load {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.navation__container {
+    width: 72%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navation__container-item1 {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 1rem;
+    animation: logo 0.8s;
+}
+
+@keyframes logo {
+    0%{
+        transform: translateX(-1000%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.navation__container-item1 img {
+    height: 100%;
+    width: auto;
+}
+
+.navation__container-item1 h3 {
+    color: #f0efeb;
+    font-family: logofont;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.navation__container-item2 ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    animation: nav 1.4s;
+}
+
+.navation__container-item2 ul li a {
+    text-decoration: none;
+    color: #f0efeb;
+    cursor: pointer;
+    font-family: hellofont;
+    font-size: 1rem;
+    position: relative;
+}
+
+.navation__container-item2 ul li a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #edf2fb;
+    left: 0;
+    bottom: -0.3rem;
+    transition: 0.5s;
+}
+
+.navation__container-item2 ul li a:hover::after{
+    width: 100%;
+}
+
+.navation__container-item2 ul li a:hover{
+    color: #edf2fb;
+}
+
+@keyframes nav {
+    0%{
+        transform: scale(0);
+    }
+    90%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
