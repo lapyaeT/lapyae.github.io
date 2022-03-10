@@ -1,17 +1,25 @@
 .project-section {
     width: 100%;
     height: 500px;
-    background-color: #081c15;
+    background-color: #f0efeb;
+    position: relative;
+    z-index: 1;
 }
 
 .project-section h3 {
-    color: #f0efeb;
+    color: transparent;
     font-size: 4rem;
     font-family: logofont;
     padding-top: 2rem;
     text-align: center;
     font-weight: 100;
     margin-bottom: 2rem;
+    z-index: 9;
+    width: auto;
+    height: auto;
+    background: linear-gradient(to right,#f0efeb 58%, #1b263b 42%);
+    background-clip:text;
+    -webkit-background-clip: text;
 }
 
 .project__container {
@@ -61,3 +69,40 @@
 .image4 {
     background-image: url(../image/doc-page.png);
 }
+
+.back__g1 {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    background-color: #1b263b;
+    top: 0;
+    left: -27%;
+    z-index: 2;
+    transform: skewX(-45deg) translateX(0);
+    z-index: -1;
+}
+
+/* .back__g2 {
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    background-color: #1b263b;
+    bottom: 0;
+    left: -28%;
+    z-index: 2;
+    transform: skewX(45deg) translateX(0);
+    box-shadow: 10px 10px 10px black;
+} */
+
+/* .back__g3 {
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    background-color: #1b263b;
+    top: 0;
+    right: -28%;
+    z-index: 2;
+    transform: skewX(45deg) translateX(0);
+    box-shadow: 0 10px 10px 10px black;
+} */
+

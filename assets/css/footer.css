@@ -51,3 +51,10 @@
 .phone i:hover {
     color: #CC0000;
 }
+
+.hello__me p {
+    color: azure;
+    font-family: hellofont;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+}

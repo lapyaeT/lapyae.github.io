@@ -25,7 +25,7 @@
 }
 .about__container-left p{
     text-align: center;
-    font-family: hellofont;
+    font-family:'Roboto', sans-serif;
     font-size: 1.5rem;
     color: #63676A;
 }
@@ -38,4 +38,10 @@
     width: 70%;
     height: auto;
     margin-left: 30%;
+}
+
+@media (min-width:0) and (max-width:480px) {
+    .about {
+        height: 320px;
+    }
 }
